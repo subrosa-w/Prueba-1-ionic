@@ -1,5 +1,3 @@
-
-<div class="ion-page" id="main-content"></div>
   <!-- header -->
   <ion-header [translucent]="true">
     <ion-toolbar>
@@ -11,74 +9,63 @@
   </ion-header>
 
 <!-- inicio de codigo -->
+
 <ion-content color="light">
   <ion-list [inset]="true">
     <ion-item>
       <ion-checkbox slot="start" aria-label="Toggle task completion"></ion-checkbox>
-      <ion-input aria-label="Task name" value="Get eggs"></ion-input>
+      <ion-input aria-label="Task name" value="Leer 30 minutos al día"></ion-input>
     </ion-item>
     <ion-item>
       <ion-checkbox slot="start" aria-label="Toggle task completion"></ion-checkbox>
-      <ion-input aria-label="Task name" value="Get milk"></ion-input>
+      <ion-input aria-label="Task name" value="Ejercicio diario"></ion-input>
     </ion-item>
     <ion-item>
       <ion-checkbox slot="start" aria-label="Toggle task completion"></ion-checkbox>
-      <ion-input aria-label="Task name" value="Take out compost"></ion-input>
+      <ion-input aria-label="Task name" value="Beber 8 vasos de agua"></ion-input>
     </ion-item>
     <ion-item>
       <ion-checkbox slot="start" aria-label="Toggle task completion"></ion-checkbox>
-      <ion-input aria-label="Task name" value="Pick up dry cleaning"></ion-input>
+      <ion-input aria-label="Task name" value="Hora de estudio"></ion-input>
     </ion-item>
     <ion-item>
       <ion-checkbox slot="start" aria-label="Toggle task completion"></ion-checkbox>
-      <ion-input aria-label="Task name" value="Call mom"></ion-input>
+      <ion-input aria-label="Task name" value="Cuidado personal"></ion-input>
     </ion-item>
     <ion-item>
       <ion-checkbox slot="start" aria-label="Toggle task completion"></ion-checkbox>
-      <ion-input aria-label="Task name" value="Order more dog food"></ion-input>
+      <ion-input aria-label="Task name" value="Jugar lol"></ion-input>
     </ion-item>
     <ion-item>
       <ion-checkbox slot="start" aria-label="Toggle task completion"></ion-checkbox>
-      <ion-input aria-label="Task name" value="Think of new tasks for this demo"></ion-input>
+      <ion-input aria-label="Task name" value="Hora de Meditación "></ion-input>
     </ion-item>
   </ion-list>
-
-  <ion-fab horizontal="end" vertical="bottom" slot="fixed" class="toolbar-fixed">
-    <ion-fab-button>
-      <ion-icon name="add"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
-  
 </ion-content>
 
-<ion-tabs>
+<!-- boton + -->
+<ion-fab horizontal="end" vertical="bottom" slot="fixed" class="toolbar-fixed">
+  <ion-fab-button>
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
 
+<!-- footer -->
   <ion-tab-bar slot="bottom">
-
     <ion-tab-button >
       <ion-icon name="home" (click)="menuPrincipal()"></ion-icon>
       Inicio
     </ion-tab-button>
-
-
     <ion-tab-button>
       <ion-icon name="barbell" (click)="menuHabitos()"></ion-icon>
       Habitos
     </ion-tab-button>
-
-
     <ion-tab-button>
       <ion-icon name="library"></ion-icon>
       Actividad
     </ion-tab-button>
-
-
     <ion-tab-button>
       <ion-icon name="exit" (click)="cerrarSesion()"></ion-icon>
       Cerrar sesion
     </ion-tab-button>
-
-
   </ion-tab-bar>
-
-</ion-tabs>

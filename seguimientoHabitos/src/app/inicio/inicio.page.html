@@ -10,31 +10,6 @@
     </ion-toolbar>
   </ion-header>
 
-  <!-- <ion-content>
-
-    <ion-content class="ion-padding"> Tap the button in the toolbar to open the menu. </ion-content>
-
-
-
-    <ion-item>
-      <ion-label position="floating">Nombre</ion-label>
-      <ion-input [(ngModel)]="name" required></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label position="floating">Apellido</ion-label>
-      <ion-input [(ngModel)]="surname" required></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label position="floating">Fecha de Nacimiento</ion-label>
-      <ion-datetime [(ngModel)]="birthdate"></ion-datetime>
-    </ion-item>
-
-    <ion-button expand="full" (click)="clearFields()">Limpiar</ion-button>
-    <ion-button expand="full" (click)="showMessage()">Mostrar</ion-button>
-  </ion-content> -->
-
   <ion-content color="light">
     <ion-list [inset]="true">
       <ion-item [button]="true">
@@ -44,18 +19,18 @@
       </ion-item>
       <ion-item [button]="true">
         <ion-icon color="tertiary" slot="start" name="list-circle" size="large"></ion-icon>
-        <ion-label>Shopping</ion-label>
+        <ion-label>Seguimiento diario</ion-label>
         <ion-note slot="end">15</ion-note>
       </ion-item>
       <ion-item [button]="true">
         <ion-icon color="success" slot="start" name="list-circle" size="large"></ion-icon>
-        <ion-label>Cleaning</ion-label>
-        <ion-note slot="end">3</ion-note>
+        <ion-label>Recordatorios</ion-label>
+        <ion-note slot="end"></ion-note>
       </ion-item>
       <ion-item [button]="true">
         <ion-icon color="warning" slot="start" name="list-circle" size="large"></ion-icon>
-        <ion-label>Reminders</ion-label>
-        <ion-note slot="end">8</ion-note>
+        <ion-label>Estadísticas</ion-label>
+        <ion-note slot="end"></ion-note>
       </ion-item>
     </ion-list>
   
@@ -79,12 +54,12 @@
       <ion-item [button]="true" detail="false">
         <div class="unread-indicator-wrapper" slot="start"></div>
         <ion-label>
-          <strong>Ionitron</strong>
-          <ion-text>I have become sentient</ion-text><br />
-          <ion-note color="medium" class="ion-text-wrap">That is all.</ion-note>
+          <strong>HabitsPlus</strong>
+          <ion-text>Notificacion</ion-text><br />
+          <ion-note color="medium" class="ion-text-wrap">Intenta probar con algo nuevo, crea una nueva rutina con HabitsPlus.</ion-note>
         </ion-label>
         <div class="metadata-end-wrapper" slot="end">
-          <ion-note color="medium">03:44</ion-note>
+          <ion-note color="medium">Today</ion-note>
           <ion-icon color="medium" name="chevron-forward"></ion-icon>
         </div>
       </ion-item>
@@ -93,14 +68,14 @@
           <div class="unread-indicator"></div>
         </div>
         <ion-label>
-          <strong>Steam</strong>
-          <ion-text>Game Store Sale</ion-text><br />
+          <strong>HabitsPlus</strong>
+          <ion-text>Recordatorio</ion-text><br />
           <ion-note color="medium" class="ion-text-wrap">
-            That game you added to your wish list 2 years ago is now on sale!
+            No olvides realizar tus habitos del dia, hazlos antes de que te olvides!
           </ion-note>
         </ion-label>
         <div class="metadata-end-wrapper" slot="end">
-          <ion-note color="medium">Yesterday</ion-note>
+          <ion-note color="medium">03:44</ion-note>
           <ion-icon color="medium" name="chevron-forward"></ion-icon>
         </div>
       </ion-item>
@@ -118,8 +93,6 @@
       </ion-item>
     </ion-list>
   </ion-content>
-
-  <ion-tabs>
 
     <ion-tab-bar slot="bottom">
   
@@ -148,7 +121,5 @@
   
   
     </ion-tab-bar>
-  
-  </ion-tabs>
 
 </div>
