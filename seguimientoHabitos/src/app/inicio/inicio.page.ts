@@ -15,7 +15,7 @@ export class InicioPage {
   usuario: string = "";
 
 
-  constructor(private router: Router, private activerouter: ActivatedRoute) {
+  constructor(private router: Router, private activerouter: ActivatedRoute, private alertController: AlertController) {
     this.activerouter.queryParams.subscribe(params => {
       if(this.router.getCurrentNavigation()?.extras.state){
         this.usuario = this.router.getCurrentNavigation()?.extras?.state?.['user'];
@@ -32,12 +32,27 @@ export class InicioPage {
 
   ngOnInit() {
   }
-  // async showMessage() {
-  //   const alert = await this.alertCtrl.create({
-  //     header: 'Información',
-  //     message: `Nombre: ${this.name} ${this.surname}`,
-  //     buttons: ['OK']
-  //   });
-  //   await alert.present();
-  // }
+
+   async presentAlert(titulo: string, msj: string) {
+     const alert = await this.alertController.create({
+       header: titulo,
+       message: msj,
+       buttons: ['OK']
+     });
+     await alert.present();
+   }
+
+   menuPrincipal(){
+     this.router.navigate(['/inicio']);
+   }
+
+   menuHabitos(){
+     this.router.navigate(['/habitos']);
+   }
+
+   cerrarSesion(){
+     this.presentAlert('Cerrar sesion','Ha cerrado sesion.')
+     this.router.navigate(['/login']);
+   }
+
 }
