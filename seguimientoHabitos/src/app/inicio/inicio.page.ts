@@ -50,6 +50,10 @@ export class InicioPage {
      this.router.navigate(['/habitos']);
    }
 
+   menuActividad(){
+    this.router.navigate(['/actividades']);
+  }
+
    cerrarSesion(){
      this.presentAlert('Cerrar sesion','Ha cerrado sesion.')
      this.router.navigate(['/login']);

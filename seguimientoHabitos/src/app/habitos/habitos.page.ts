@@ -34,6 +34,10 @@ export class HabitosPage implements OnInit {
     this.router.navigate(['/habitos']);
   }
 
+  menuActividad(){
+    this.router.navigate(['/actividades']);
+  }
+
   cerrarSesion(){
     this.presentAlert('Cerrar sesion','Ha cerrado sesion.')
     this.router.navigate(['/login']);
